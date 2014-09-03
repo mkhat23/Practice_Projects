@@ -45,6 +45,7 @@
 		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="true" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/Users/mkh10/Documents/JavaProjects"/>
 			<item value="/Users/mkh10/Dropbox/LearnJavaIn21Days/Java21"/>
 			<item value="/Users/mkh10/Documents/How To Learn Java in 21 Days/Java21Updated"/>
 		</list>
