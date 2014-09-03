@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RandomYoutube</string>
+    <string name="welcome_message">Welcome to the random youtube list generator!</string>
+    <string name="action_settings">Settings</string>
+    <string name="populate">Populate</string>
+
+</resources>
