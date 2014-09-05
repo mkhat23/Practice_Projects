@@ -217,7 +217,7 @@ public class Animals {
 		return "Grrrr";
 	}
 
-	public static void speakAnimal(Animals randAnimal) {
+	public static void speskAnimal(Animals randAnimal) {
 
 		System.out.println("Animal says " + randAnimal.makeSound());
 	}
