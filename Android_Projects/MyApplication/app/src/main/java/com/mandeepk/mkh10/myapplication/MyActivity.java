@@ -4,14 +4,25 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 
 public class MyActivity extends Activity {
+
+    private Button answerYesButton, answerNoButton;
+    private EditText usersNameEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my);
+        answerYesButton = (Button) findViewById(R.id.answer_yes_button);
+        answerNoButton = (Button) findViewById(R.id.answer_no_button);
+        usersNameEditText = (EditText) findViewById(R.id.users_name_edit_text);
+
     }
 
 
@@ -20,6 +31,7 @@ public class MyActivity extends Activity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.my, menu);
         return true;
+
     }
 
     @Override
@@ -32,5 +44,22 @@ public class MyActivity extends Activity {
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    public void onYesButtonClick(View view) {
+        String usersName = String.valueOf(usersNameEditText.getText());
+
+        String yourYesResponse = "That is great" + usersName;
+
+        Toast.makeText(this, yourYesResponse, Toast.LENGTH_SHORT).show();
+    }
+
+    public void onNoButtonClick(View view) {
+
+        String usersName = String.valueOf(usersNameEditText.getText());
+
+        String yourNoResponse = "Too bad" + usersName;
+
+        Toast.makeText(this, yourNoResponse, Toast.LENGTH_SHORT).show();
     }
 }
