@@ -22,7 +22,7 @@ public class MyActivity extends Activity {
         String[] favouriteTVShows = {"Breaking Bad", "The Fresh Prince of Bel-Air", "Prison Break", "The Simpsons",
                 "Family Guy", "Friends", "The Big Bang Theory", "The Gadget Show", "Come Dine With Me"};
 
-        ListAdapter theAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,
+        ListAdapter theAdapter = new ArrayAdapter<String>(this, R.layout.row_layout,
                 favouriteTVShows);
 
         ListView theListView = (ListView) findViewById(R.id.theListView);
