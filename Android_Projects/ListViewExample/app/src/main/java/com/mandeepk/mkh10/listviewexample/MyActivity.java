@@ -22,8 +22,7 @@ public class MyActivity extends Activity {
         String[] favouriteTVShows = {"Breaking Bad", "The Fresh Prince of Bel-Air", "Prison Break", "The Simpsons",
                 "Family Guy", "Friends", "The Big Bang Theory", "The Gadget Show", "Come Dine With Me"};
 
-        ListAdapter theAdapter = new ArrayAdapter<String>(this, R.layout.row_layout,
-                favouriteTVShows);
+        ListAdapter theAdapter = new MyAdapter(this, favouriteTVShows);
 
         ListView theListView = (ListView) findViewById(R.id.theListView);
 
@@ -36,6 +35,7 @@ public class MyActivity extends Activity {
                 String tvShowPicked = "You selected: " + String.valueOf(adapterView.getItemAtPosition(position));
 
                 Toast.makeText(MyActivity.this, tvShowPicked, Toast.LENGTH_SHORT).show();
+               
 
             }
         });
