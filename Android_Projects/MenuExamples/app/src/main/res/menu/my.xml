@@ -1,14 +1,22 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".MyActivity" >
+    tools:context=".MyActivity">
+
+    <group android:checkableBehavior="single"/>
 
 
-     <item android:id="@+id/action_settings"
-        android:title="@string/action_settings"
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/weather_clear"
         android:orderInCategory="100"
-        android:showAsAction="never" />
+        android:showAsAction="never"
+        android:title="@string/action_settings" />
 
-    <item android:id="@+id/exit_the_app"
-        android:title = "@string/options_exit"
-        android:showAsAction="ifRoom|withText"/>
+    <item
+        android:id="@+id/exit_the_app"
+        android:icon="@drawable/weather_clear_night"
+        android:orderInCategory="101"
+        android:showAsAction="ifRoom|withText"
+
+        android:title="@string/options_exit" />
 </menu>
