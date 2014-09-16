@@ -16,7 +16,6 @@
         android:id="@+id/exit_the_app"
         android:icon="@drawable/weather_clear_night"
         android:orderInCategory="101"
-        android:showAsAction="ifRoom|withText"
 
         android:title="@string/options_exit" />
 </menu>

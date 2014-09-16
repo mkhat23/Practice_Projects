@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.mandeepk.mkh10.menuexamplesupdated.MyActivity">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/action_settings"
+            android:title="@string/action_settings"
+            android:orderInCategory="100"
+            app:showAsAction="never"
+            android:icon="@drawable/weather_clear" />
+
+        <item
+            android:id="@+id/exit_the_app"
+            android:title="@string/options_settings_exit"
+            app:showAsAction="ifRoom|withText"
+            android:orderInCategory="101"
+            android:icon="@drawable/weather_clear_night" />
+
+    </group>
+
+</menu>
