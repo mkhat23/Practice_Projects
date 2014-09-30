@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="installedFeatures">
+		<item value="com.android.ide.eclipse.adt.package.feature:23.0.2.1259578"/>
+		<item value="com.collabnet.subversion.merge.feature:3.0.13"/>
+		<item value="net.java.dev.jna:3.4.0.t20120117_1605"/>
+		<item value="org.eclipse.cdt.gdb:7.0.0.201202111925"/>
+		<item value="org.eclipse.cdt:8.0.2.201202111925"/>
+		<item value="org.eclipse.draw2d:3.9.0.201212170307"/>
+		<item value="org.eclipse.egit:3.4.1.201406201815-r"/>
+		<item value="org.eclipse.emf.common:2.9.1.v20130827-0309"/>
+		<item value="org.eclipse.emf.ecore:2.9.1.v20130827-0309"/>
+		<item value="org.eclipse.gef:3.9.0.201212170307"/>
+		<item value="org.eclipse.help:1.4.1.v20120912-144938-8R7xFOXFLWUl7PpNBh_HIGkb4"/>
+		<item value="org.eclipse.jgit:3.4.1.201406201815-r"/>
+		<item value="org.eclipse.mylyn.bugzilla_feature:3.8.3.v20130107-0100"/>
+		<item value="org.eclipse.mylyn.commons.identity:1.0.3.v20130107-0100"/>
+		<item value="org.eclipse.mylyn.commons.notifications:1.0.3.v20130107-0100"/>
+		<item value="org.eclipse.mylyn.commons.repositories:1.0.3.v20130107-0100"/>
+		<item value="org.eclipse.mylyn.commons:3.8.3.v20130107-0100"/>
+		<item value="org.eclipse.mylyn.context_feature:3.8.3.v20130107-0100"/>
+		<item value="org.eclipse.mylyn.discovery:3.8.3.v20130107-0100"/>
+		<item value="org.eclipse.mylyn.github.feature:3.4.0.201406110918-r"/>
+		<item value="org.eclipse.mylyn.ide_feature:3.8.3.v20130107-0100"/>
+		<item value="org.eclipse.mylyn.monitor:3.8.3.v20130107-0100"/>
+		<item value="org.eclipse.mylyn.tasks.ide:3.8.3.v20130107-0100"/>
+		<item value="org.eclipse.mylyn.team_feature:3.8.3.v20130107-0100"/>
+		<item value="org.eclipse.mylyn_feature:3.8.3.v20130107-0100"/>
+		<item value="org.eclipse.platform:4.2.1.v20130118-173121-9MF7GHYdG0B5kx4E_SkfZV-1mNjVATf67ZAb7"/>
+		<item value="org.eclipse.rcp:4.2.2.v20130129-152330-7IARAABrMQkGSvMgQnUlz-DQz00h"/>
+		<item value="org.tigris.subversion.clientadapter.feature:1.8.6"/>
+		<item value="org.tigris.subversion.clientadapter.javahl.feature:1.7.10"/>
+		<item value="org.tigris.subversion.clientadapter.svnkit.feature:1.7.9.2"/>
+		<item value="org.tigris.subversion.subclipse.graph.feature:1.1.1"/>
+		<item value="org.tigris.subversion.subclipse.mylyn:3.0.0"/>
+		<item value="org.tigris.subversion.subclipse:1.8.22"/>
+		<item value="org.tmatesoft.svnkit:1.7.9.r9659_v20130411_2103"/>
+	</list>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item value="427" key="DIALOG_Y_ORIGIN"/>
+		<item value="665" key="DIALOG_X_ORIGIN"/>
+	</section>
+	<section name="BasicNewProjectResourceWizard">
+	</section>
+	<section name="ExternalProjectImportWizard">
+		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/Users/mkh10/Documents/JavaProjects"/>
+			<item value="/Users/mkh10/Dropbox/LearnJavaIn21Days/Java21"/>
+			<item value="/Users/mkh10/Documents/How To Learn Java in 21 Days/Java21Updated"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
+	</section>
+	<section name="NewWizardAction">
+		<item value="org.eclipse.ui.wizards.new.project" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.ui.Basic"/>
+			<item value="com.android.ide.eclipse.wizards.category"/>
+			<item value="org.eclipse.jdt.ui.java"/>
+		</list>
+	</section>
+</section>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="4" by="lint 23.0.2">
+
+    <issue
+        id="UseCompoundDrawables"
+        severity="Warning"
+        message="This tag and its children can be replaced by one &lt;TextView/> and a compound drawable"
+        category="Performance"
+        priority="6"
+        summary="Checks whether the current node can be replaced by a `TextView` using compound drawables."
+        explanation="A `LinearLayout` which contains an `ImageView` and a `TextView` can be more efficiently handled as a compound drawable (a single TextView, using the `drawableTop`, `drawableLeft`, `drawableRight` and/or `drawableBottom` attributes to draw one or more images adjacent to the text).
+
+If the two widgets are offset from each other with margins, this can be replaced with a `drawablePadding` attribute.
+
+There&apos;s a lint quickfix to perform this conversion in the Eclipse plugin."
+        errorLine1="&lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^"
+        quickfix="adt">
+        <location
+            file="/Users/mkh10/Documents/Practise_Projects/Android_Projects/ListViewExample/app/src/main/res/layout/row_layout2.xml"
+            line="1"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="ViewHolder"
+        severity="Warning"
+        message="Unconditional layout inflation from view adapter: Should use View Holder pattern (use recycled view passed into this method as the second parameter) for smoother scrolling"
+        category="Performance"
+        priority="5"
+        summary="Looks for candidates for the view holder pattern"
+        explanation="When implementing a view Adapter, you should avoid unconditionally inflating a new layout; if an available item is passed in for reuse, you should try to use that one instead. This helps make for example ListView scrolling much smoother."
+        url="http://developer.android.com/training/improving-layouts/smooth-scrolling.html#ViewHolder"
+        urls="http://developer.android.com/training/improving-layouts/smooth-scrolling.html#ViewHolder"
+        errorLine1="        View theView = theInflater.inflate(R.layout.row_layout2, parent, false);"
+        errorLine2="                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/mkh10/Documents/Practise_Projects/Android_Projects/ListViewExample/app/src/main/java/com/mandeepk/mkh10/listviewexample/MyAdapter.java"
+            line="25"
+            column="24"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource R.drawable.ic_launcher appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Looks for unused resources"
+        explanation="Unused resources make applications larger and slow down builds.">
+        <location
+            file="/Users/mkh10/Documents/Practise_Projects/Android_Projects/ListViewExample/app/src/main/res/drawable-hdpi/ic_launcher.png"/>
+        <location
+            file="/Users/mkh10/Documents/Practise_Projects/Android_Projects/ListViewExample/app/src/main/res/drawable-mdpi/ic_launcher.png"/>
+        <location
+            file="/Users/mkh10/Documents/Practise_Projects/Android_Projects/ListViewExample/app/src/main/res/drawable-xhdpi/ic_launcher.png"/>
+        <location
+            file="/Users/mkh10/Documents/Practise_Projects/Android_Projects/ListViewExample/app/src/main/res/drawable-xxhdpi/ic_launcher.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource R.layout.row_layout appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Looks for unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+    />
+
+    <issue
+        id="IconDensities"
+        severity="Warning"
+        message="Missing the following drawables in drawable-mdpi: big_black_dot.png, list_ingredients.png"
+        category="Usability:Icons"
+        priority="4"
+        summary="Ensures that icons provide custom versions for all supported densities"
+        explanation="Icons will look best if a custom version is provided for each of the major screen density classes (low, medium, high, extra high). This lint check identifies icons which do not have complete coverage across the densities.
+
+Low density is not really used much anymore, so this check ignores the ldpi density. To force lint to include it, set the environment variable `ANDROID_LINT_INCLUDE_LDPI=true`. For more information on current density usage, see http://developer.android.com/resources/dashboard/screens.html"
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="/Users/mkh10/Documents/Practise_Projects/Android_Projects/ListViewExample/app/src/main/res/drawable-mdpi"/>
+    </issue>
+
+    <issue
+        id="IconDensities"
+        severity="Warning"
+        message="Missing the following drawables in drawable-xhdpi: big_black_dot.png, list_ingredients.png"
+        category="Usability:Icons"
+        priority="4"
+        summary="Ensures that icons provide custom versions for all supported densities"
+        explanation="Icons will look best if a custom version is provided for each of the major screen density classes (low, medium, high, extra high). This lint check identifies icons which do not have complete coverage across the densities.
+
+Low density is not really used much anymore, so this check ignores the ldpi density. To force lint to include it, set the environment variable `ANDROID_LINT_INCLUDE_LDPI=true`. For more information on current density usage, see http://developer.android.com/resources/dashboard/screens.html"
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="/Users/mkh10/Documents/Practise_Projects/Android_Projects/ListViewExample/app/src/main/res/drawable-xhdpi"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        severity="Warning"
+        message="[Accessibility] Missing contentDescription attribute on image"
+        category="Accessibility"
+        priority="3"
+        summary="Ensures that image widgets provide a contentDescription"
+        explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.
+
+Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore=&quot;ContentDescription&quot; attribute.
+
+Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`. See http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases."
+        errorLine1="    &lt;ImageView"
+        errorLine2="    ^"
+        quickfix="adt">
+        <location
+            file="/Users/mkh10/Documents/Practise_Projects/Android_Projects/ListViewExample/app/src/main/res/layout/row_layout2.xml"
+            line="9"
+            column="5"/>
+    </issue>
+
+</issues>
